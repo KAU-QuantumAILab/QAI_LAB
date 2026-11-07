@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1000" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="ribbon" x2="1" y2="0.7">
+      <stop stop-color="#9dc8ef" stop-opacity=".22"/>
+      <stop offset=".48" stop-color="#fff" stop-opacity=".32"/>
+      <stop offset="1" stop-color="#a0cef3" stop-opacity=".19"/>
+    </linearGradient>
+    <linearGradient id="crest">
+      <stop stop-color="#fff" stop-opacity=".1"/>
+      <stop offset=".38" stop-color="#fff" stop-opacity=".76"/>
+      <stop offset=".76" stop-color="#fff" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#fff" stop-opacity=".12"/>
+    </linearGradient>
+  </defs>
+
+  <path fill="url(#ribbon)" d="M-50 90C250 12 457 240 765 198S1236-45 1490 40V100C1250 22 1070 234 768 246S239 60-50 147Z"/>
+  <path fill="url(#ribbon)" d="M-50 570C206 370 499 409 764 511S1212 613 1490 405V478C1230 683 992 644 758 553S200 419-50 630Z"/>
+  <path fill="url(#ribbon)" d="M-50 861C251 718 454 982 788 931S1255 709 1490 729V790C1265 773 1138 942 797 983S249 790-50 919Z"/>
+
+  <g fill="none" stroke="url(#crest)">
+    <path stroke-width="3" d="M-50 107C249 29 459 257 766 214S1236-26 1490 55"/>
+    <path d="M-50 130C249 51 449 269 768 230S1239-3 1490 78"/>
+    <path stroke-width="3" d="M-50 587C211 394 491 428 761 525S1219 633 1490 427"/>
+    <path d="M-50 609C211 417 492 445 760 541S1221 652 1490 450"/>
+    <path stroke-width="4" d="M-50 877C249 737 455 995 790 947S1259 725 1490 746"/>
+    <path stroke-width="1.5" d="M-50 898C250 756 456 1007 796 964S1262 746 1490 768"/>
+  </g>
+</svg>
