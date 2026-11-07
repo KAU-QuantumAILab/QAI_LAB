@@ -11,53 +11,96 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#home" aria-label="QAI Lab home">
+      <a class="brand" href="https://www.kau.ac.kr/" aria-label="Korea Aerospace University official website">
         <img src="assets/images/kau-emblem.png" width="80" height="80" alt="한국항공대학교 Korea Aerospace University">
-        <span>QAI <span class="brand-light">Lab</span></span>
+        <span>Korea Aerospace University</span>
       </a>
       <nav aria-label="Main navigation">
         <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#members">Members</a></li>
-          <li><a href="#publications">Publications</a></li>
-          <li><a href="#software">Software</a></li>
+          <li><a href="#home" aria-current="page">Home</a></li>
+          <li><a href="members.html">Members</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a class="language-switch" href="ko/index.html" hreflang="ko" lang="ko">한국어</a></li>
         </ul>
       </nav>
     </div>
   </header>
   <main id="main">
     <section class="hero" id="home" aria-label="Quantum Artificial Intelligence Lab">
-      <img src="assets/images/qai-banner.jpeg" width="1500" height="500" alt="Quantum Artificial Intelligence Lab — blue, green and gold circular arrows surrounding an atom.">
+      <img src="assets/images/Quantum_AI_Lab_redrawn_2172x333.png" width="2172" height="333" fetchpriority="high" alt="Quantum Artificial Intelligence Lab">
     </section>
-    <section class="intro container" aria-labelledby="intro-title">
-      <h1 id="intro-title">Quantum Artificial Intelligence (QAI) Lab</h1>
-      <!-- Replace these paragraphs with the approved laboratory introduction. -->
-      <p class="intro-lead">Welcome to the Quantum Artificial Intelligence Lab.</p>
-      <p class="placeholder">Our laboratory introduction, research interests, and vision will be shared here.</p>
+    <section class="intro container" aria-label="About the lab">
+      <p class="intro-lead">At the Quantum Artificial Intelligence Lab (QAI Lab), our research focuses on two fundamental directions: understanding and advancing <strong>the fundamental principles of artificial neural networks</strong> and <strong>developing novel neural network architectures</strong> that leverage the unique properties of quantum computing.</p>
+
+      <section class="research-direction" aria-labelledby="research-neural">
+        <h2 id="research-neural">Understanding and Advancing Artificial Neural Networks</h2>
+        <p>We investigate the fundamental operating principles of artificial neural networks to gain deeper insights into how they learn, represent information, and make decisions.</p>
+
+        <section class="research-topic research-teaser" aria-labelledby="research-rfpar">
+          <div class="research-teaser-media">
+            <a class="research-teaser-image" href="assets/images/rfpar.png" target="_blank" rel="noopener" aria-label="Open the full-size RFPAR image in a new tab">
+              <img src="assets/images/rfpar.png" width="1520" height="1034" loading="lazy" alt="RFPAR examples showing clean images, adversarial results, and sparse pixel perturbations on ImageNet, MS-COCO, and Argoverse.">
+            </a>
+            <a class="research-teaser-link" href="https://github.com/KAU-QuantumAILab/RFPAR">View on GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+          <div>
+            <h3 id="research-rfpar">Remember and Forget Pixel Attack using RL</h3>
+            <p>RFPAR uses reinforcement learning to select a small set of pixels for a black-box attack. In the examples shown, changing 0.004% of pixels causes an ImageNet classifier to label a rooster as a coil. Changing 0.027% and 0.114% of pixels removes all detections in the MS-COCO and Argoverse examples, respectively.</p>
+            <p class="research-teaser-citation">Dongsu Song, Daehwa Ko, and Jay Hoon Jung. <cite><a href="https://proceedings.nips.cc/paper_files/paper/2024/hash/9e770fcdb456400325c11d58b3a04d08-Abstract-Conference.html">Amnesia as a Catalyst for Enhancing Black Box Pixel Attacks in Image Classification and Object Detection</a></cite>. Advances in Neural Information Processing Systems 37 (NeurIPS 2024).</p>
+          </div>
+        </section>
+
+        <section class="research-topic research-teaser" aria-labelledby="research-segpar">
+          <div class="research-teaser-media">
+            <a class="research-teaser-image" href="assets/images/eccv2.png" target="_blank" rel="noopener" aria-label="Open the full-size SegPAR image in a new tab">
+              <img src="assets/images/eccv2.png" width="1446" height="800" loading="lazy" alt="VOC2012 comparison showing the original segmentation and results after PointWise, SparseEvo, and SegPAR attacks.">
+            </a>
+            <a class="research-teaser-link" href="https://github.com/KAU-QuantumAILab/SegPAR">View on GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+          <div>
+            <h3 id="research-segpar">SegPAR: Class-Centric Decision-Based Sparse Attack</h3>
+            <p>SegPAR targets pixels associated with a chosen class to test the robustness of semantic segmentation models. In this VOC2012 example, SegPAR removes both predicted motorcycle masks by changing 1.36% of the image pixels. PointWise and SparseEvo change 9.57% and 7.38%, respectively, and leave parts of the motorcycle predictions visible.</p>
+            <p class="research-teaser-citation">Dongsu Song, DaeYun Go, Boseung Seo, and Jay Hoon Jung. <cite><a href="https://arxiv.org/abs/2608.11285">SegPAR: Class-Centric Decision-Based Sparse Attack for Semantic Segmentation</a></cite>. Computer Vision – ECCV 2026, LNCS 17035, pp. 189–206.</p>
+          </div>
+        </section>
+      </section>
+
+      <section class="research-direction" aria-labelledby="research-quantum">
+        <h2 id="research-quantum">Quantum Computing-Based Artificial Neural Networks</h2>
+        <p>We aim to develop <strong>novel artificial neural network architectures and learning algorithms</strong> that leverage the unique properties of quantum computers, particularly <strong>quantum superposition and entanglement</strong>, to explore new approaches to information representation and processing beyond conventional classical neural networks.</p>
+        <section class="research-topic research-teaser" aria-labelledby="research-qai-algorithm">
+          <div class="research-teaser-media research-teaser-media-centered">
+            <a class="research-teaser-image" href="assets/images/QAI-Algorithm.png" target="_blank" rel="noopener" aria-label="Open the full-size QAI Algorithm image in a new tab">
+              <img src="assets/images/QAI-Algorithm.png" width="1918" height="820" loading="lazy" alt="Workflow linking an air mobility network, graph-based identification of key airports, GLEAM infection risk estimates, and airport quarantine decisions.">
+            </a>
+          </div>
+          <div>
+            <h3 id="research-qai-algorithm">Air Mobility Network and Quantum Computing</h3>
+            <p>We explore how quantum computing can identify key airports in an air mobility network, where airports are nodes and flight routes connect them. The illustrated workflow uses GLEAM to estimate infection risk and help prioritize airport quarantine measures and resources.</p>
+            <p class="research-teaser-citation"><small>This work was supported by quantum computing cloud resources provided by the Korea Institute of Science and Technology Information (KISTI) through the National Research Foundation of Korea (NRF) grant funded by the Korea government (MSIT) (No. RS-2025-24534879).</small></p>
+          </div>
+        </section>
+      </section>
     </section>
-    <!-- Each section can later be moved to its own page. -->
     <div class="content-sections container">
-      <section class="content-section" id="members" aria-labelledby="members-title">
-        <h2 id="members-title">Members</h2>
-        <p class="placeholder">Meet our team. Member profiles will be added here.</p>
-      </section>
-      <section class="content-section" id="publications" aria-labelledby="publications-title">
-        <h2 id="publications-title">Publications</h2>
-        <p class="placeholder">Our publications will be listed here.</p>
-      </section>
-      <section class="content-section" id="software" aria-labelledby="software-title">
-        <h2 id="software-title">Software</h2>
-        <p>Explore our research code on GitHub.</p>
-        <ul class="software-links">
-          <li><a href="https://github.com/KAU-QuantumAILab/TESLA">TESLA <span aria-hidden="true">↗</span></a></li>
-          <li><a href="https://github.com/KAU-QuantumAILab/RFPAR">RFPAR <span aria-hidden="true">↗</span></a></li>
-          <li><a href="https://github.com/KAU-QuantumAILab/TRAIL">TRAIL <span aria-hidden="true">↗</span></a></li>
-          <li><a href="https://github.com/KAU-QuantumAILab/ReAct-Net">ReAct-Net <span aria-hidden="true">↗</span></a></li>
-          <li><a href="https://github.com/KAU-QuantumAILab/SegPAR">SegPAR <span aria-hidden="true">↗</span></a></li>
-        </ul>
+      <section class="content-section join-us-layout" id="join-us" aria-labelledby="join-us-title">
+        <div>
+          <h2 id="join-us-title">Join Us</h2>
+          <p><strong>QAI Lab at Korea Aerospace University</strong> welcomes motivated students passionate about research and solving real-world problems. Explore the guides and scholarship opportunities below to join us.</p>
+          <details class="join-us-contact">
+            <summary>Do you want to join the Lab?</summary>
+            <div class="join-us-contact-info">
+              Contact Prof. Jung at KAU (정재훈)<br>
+              <a href="mailto:jhjung@kau.ac.kr">jhjung@kau.ac.kr</a>
+            </div>
+          </details>
+        </div>
+        <img src="assets/images/join-us.png" width="1086" height="1448" loading="lazy" alt="A humanoid robot reaching out through an opening.">
       </section>
     </div>
   </main>
-  <footer class="site-footer"><div class="container">Quantum Artificial Intelligence Lab <span>QAI Lab</span></div></footer>
+  <footer class="site-footer">
+    <p>© 2026 Quantum Artificial Intelligence Lab (QAI Lab) · Korea Aerospace University</p>
+  </footer>
 </body>
 </html>
