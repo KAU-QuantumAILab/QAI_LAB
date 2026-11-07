@@ -15,12 +15,12 @@ a:focus-visible { outline: 3px solid #308bc4; outline-offset: 5px; }
 .site-header { background: white; }
 .header-inner { min-height: 100px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 .brand { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; color: var(--blue); font-size: 26px; font-weight: 700; white-space: nowrap; }
-.brand img { display: block; object-fit: contain; }
+.brand img { display: block; width: 80px; height: 80px; object-fit: contain; }
 .brand-light { font-weight: 400; }
 .nav-links { display: flex; align-items: center; gap: 32px; list-style: none; padding: 0; margin: 0; }
 .nav-links a { display: block; padding-block: 10px; font-size: 17px; font-weight: 700; text-decoration: none; }
 .nav-links a:hover { color: #258bc9; }
-body:not(:has(.content-section:target)) a[href="#home"], body:has(#members:target) a[href="#members"], body:has(#publications:target) a[href="#publications"], body:has(#datasets:target) a[href="#datasets"], body:has(#software:target) a[href="#software"] { color: #258bc9; }
+body:not(:has(.content-section:target)) a[href="#home"], body:has(#members:target) a[href="#members"], body:has(#publications:target) a[href="#publications"], body:has(#software:target) a[href="#software"] { color: #258bc9; }
 .hero { background: #f4f9fc; }
 .hero img { display: block; width: 100%; height: auto; }
 .intro { padding-block: 70px 65px; }
@@ -38,7 +38,7 @@ h2 { margin: 0 0 18px; font-size: 27px; }
   .container { width: calc(100% - 40px); }
   .header-inner { flex-direction: column; gap: 4px; padding-block: 14px; }
   .brand { font-size: 23px; }
-  .brand img { width: 48px; height: 48px; }
+  .brand img { width: 64px; height: 64px; }
   .nav-links { justify-content: center; flex-wrap: wrap; gap: 2px 20px; }
   .nav-links a { font-size: 14px; }
   .intro { padding-block: 40px; }
@@ -48,3 +48,7 @@ h2 { margin: 0 0 18px; font-size: 27px; }
   .site-footer .container { flex-direction: column; gap: 0; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+.software-links { display: flex; flex-wrap: wrap; gap: 12px; list-style: none; margin: 24px 0 0; padding: 0; }
+.software-links a { display: inline-flex; align-items: center; gap: 24px; padding: 12px 20px; border: 1px solid var(--line); border-radius: 6px; color: var(--blue); text-decoration: none; font-weight: 700; }
+.software-links a:hover { background: #f0f7fc; border-color: #258bc9; }
