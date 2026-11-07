@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="160" viewBox="0 0 260 160">
+  <rect width="260" height="160" fill="#fbf1e3"/>
+  <rect x="9" y="9" width="242" height="142" rx="10" fill="none" stroke="#e7c399"/>
+  <g fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <g fill="#fffcf7" stroke="#e7c399"><circle cx="70" cy="57" r="6"/><circle cx="90" cy="57" r="6"/><circle cx="110" cy="57" r="6"/><circle cx="130" cy="57" r="6"/><circle cx="150" cy="57" r="6"/><circle cx="170" cy="57" r="6"/><circle cx="190" cy="57" r="6"/><circle cx="70" cy="103" r="6"/><circle cx="90" cy="103" r="6"/><circle cx="110" cy="103" r="6"/><circle cx="130" cy="103" r="6"/><circle cx="150" cy="103" r="6"/><circle cx="170" cy="103" r="6"/><circle cx="190" cy="103" r="6"/></g><path d="M70 64v12m20-12v12m20-12v12m20-12v12m20-12v12m20-12v12m20-12v12m-120 8v12m20-12v12m20-12v12m20-12v12m20-12v12m20-12v12m20-12v12" stroke="#e7c399"/><path d="M27 84c4-21 10-21 14 0s10 21 14 0m150 0c4-21 10-21 14 0s10 21 14 0" stroke="#895322"/>
+  </g>
+</svg>
