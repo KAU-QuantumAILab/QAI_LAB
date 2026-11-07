@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="한국항공대학교 양자 인공지능 연구실(QAI Lab)입니다.">
+  <title>QAI Lab | 양자 인공지능 연구실</title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">본문 바로가기</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="https://www.kau.ac.kr/" aria-label="한국항공대학교 공식 홈페이지">
+        <img src="../assets/images/kau-emblem.png" width="80" height="80" alt="한국항공대학교 로고">
+        <span>한국항공대학교</span>
+      </a>
+      <nav aria-label="주 메뉴">
+        <ul class="nav-links">
+          <li><a href="#home" aria-current="page">홈</a></li>
+          <li><a href="members.html">구성원</a></li>
+          <li><a href="publications.html">논문</a></li>
+          <li><a class="language-switch" href="../index.html" hreflang="en" lang="en">English</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" id="home" aria-label="양자 인공지능 연구실">
+      <img src="../assets/images/Quantum_AI_Lab_redrawn_2172x333.png" width="2172" height="333" fetchpriority="high" alt="양자 인공지능 연구실 배너">
+    </section>
+    <section class="intro container" aria-label="연구실 소개">
+      <p class="intro-lead">양자 인공지능 연구실(QAI Lab)은 두 가지 연구 방향에 집중합니다. <strong>인공신경망의 기본 원리</strong>를 이해하고 발전시키는 연구와 양자 컴퓨팅의 고유한 특성을 활용해 <strong>새로운 신경망 구조를 개발</strong>하는 연구입니다.</p>
+
+      <section class="research-direction" aria-labelledby="research-neural">
+        <h2 id="research-neural">인공신경망의 원리 이해와 발전</h2>
+        <p>인공신경망이 어떻게 학습하고, 정보를 표현하고, 판단을 내리는지 더 깊이 이해하기 위해 그 기본 작동 원리를 연구합니다.</p>
+
+        <section class="research-topic research-teaser" aria-labelledby="research-rfpar">
+          <div class="research-teaser-media">
+            <a class="research-teaser-image" href="../assets/images/rfpar.png" target="_blank" rel="noopener" aria-label="RFPAR 원본 이미지를 새 탭에서 열기">
+              <img src="../assets/images/rfpar.png" width="1520" height="1034" loading="lazy" alt="ImageNet, MS-COCO, Argoverse의 원본 이미지와 RFPAR 공격 결과, 그리고 변경된 픽셀을 비교한 그림.">
+            </a>
+            <a class="research-teaser-link" href="https://github.com/KAU-QuantumAILab/RFPAR">GitHub에서 보기 <span aria-hidden="true">↗</span></a>
+          </div>
+          <div>
+            <h3 id="research-rfpar">강화학습을 이용한 기억·망각 픽셀 공격</h3>
+            <p>RFPAR는 강화학습으로 소수의 픽셀을 선택해 블랙박스 공격을 수행합니다. 그림의 ImageNet 예시에서는 픽셀의 0.004%를 바꾸자 분류기가 수탉을 코일로 잘못 분류했습니다. MS-COCO와 Argoverse 예시에서는 각각 0.027%와 0.114%를 바꾸자 객체가 하나도 탐지되지 않았습니다.</p>
+            <p class="research-teaser-citation" lang="en">Dongsu Song, Daehwa Ko, and Jay Hoon Jung. <cite><a href="https://proceedings.nips.cc/paper_files/paper/2024/hash/9e770fcdb456400325c11d58b3a04d08-Abstract-Conference.html">Amnesia as a Catalyst for Enhancing Black Box Pixel Attacks in Image Classification and Object Detection</a></cite>. Advances in Neural Information Processing Systems 37 (NeurIPS 2024).</p>
+          </div>
+        </section>
+
+        <section class="research-topic research-teaser" aria-labelledby="research-segpar">
+          <div class="research-teaser-media">
+            <a class="research-teaser-image" href="../assets/images/eccv2.png" target="_blank" rel="noopener" aria-label="SegPAR 원본 이미지를 새 탭에서 열기">
+              <img src="../assets/images/eccv2.png" width="1446" height="800" loading="lazy" alt="VOC2012의 원본 분할 결과와 PointWise, SparseEvo, SegPAR 공격 이후의 결과를 비교한 그림.">
+            </a>
+            <a class="research-teaser-link" href="https://github.com/KAU-QuantumAILab/SegPAR">GitHub에서 보기 <span aria-hidden="true">↗</span></a>
+          </div>
+          <div>
+            <h3 id="research-segpar">SegPAR: 클래스 중심의 결정 기반 희소 공격</h3>
+            <p>SegPAR는 선택한 클래스에 해당하는 픽셀을 공략해 의미론적 분할 모델의 강건성을 평가합니다. 그림의 VOC2012 예시에서 SegPAR는 전체 픽셀의 1.36%를 바꿔 모델이 예측한 오토바이 마스크 두 개를 모두 제거했습니다. PointWise와 SparseEvo는 각각 9.57%와 7.38%를 바꿨지만 오토바이 예측이 일부 남았습니다.</p>
+            <p class="research-teaser-citation" lang="en">Dongsu Song, DaeYun Go, Boseung Seo, and Jay Hoon Jung. <cite><a href="https://arxiv.org/abs/2608.11285">SegPAR: Class-Centric Decision-Based Sparse Attack for Semantic Segmentation</a></cite>. Computer Vision – ECCV 2026, LNCS 17035, pp. 189–206.</p>
+          </div>
+        </section>
+      </section>
+
+      <section class="research-direction" aria-labelledby="research-quantum">
+        <h2 id="research-quantum">양자 컴퓨팅 기반 인공신경망</h2>
+        <p><strong>양자 중첩과 얽힘</strong> 등 양자 컴퓨터의 고유한 특성을 활용하는 <strong>새로운 인공신경망 구조와 학습 알고리즘</strong>을 개발하고, 기존 인공신경망과 다른 정보 표현 및 처리 방법을 탐구합니다.</p>
+        <section class="research-topic research-teaser" aria-labelledby="research-qai-algorithm">
+          <div class="research-teaser-media research-teaser-media-centered">
+            <a class="research-teaser-image" href="../assets/images/QAI-Algorithm.png" target="_blank" rel="noopener" aria-label="QAI 알고리즘 원본 이미지를 새 탭에서 열기">
+              <img src="../assets/images/QAI-Algorithm.png" width="1918" height="820" loading="lazy" alt="항공 이동망 분석에서 그래프 기반 핵심 공항 식별, GLEAM 감염 위험 추정, 공항 검역 의사결정으로 이어지는 흐름.">
+            </a>
+          </div>
+          <div>
+            <h3 id="research-qai-algorithm">항공 이동망과 양자 컴퓨팅</h3>
+            <p>공항을 노드로, 항공 노선을 노드 사이의 연결로 표현한 항공 이동망에서 양자 컴퓨팅으로 핵심 공항을 찾는 방법을 연구합니다. 그림의 흐름은 GLEAM으로 감염 위험을 추정하고, 공항 검역 조치와 자원 배분의 우선순위를 정하는 데 활용하는 과정을 보여줍니다.</p>
+            <p class="research-teaser-citation"><small>본 연구는 정부(과학기술정보통신부)의 재원으로 한국연구재단(NRF)의 지원을 받아 한국과학기술정보연구원(KISTI)이 제공한 양자 컴퓨팅 클라우드 자원을 활용했습니다(과제번호 RS-2025-24534879).</small></p>
+          </div>
+        </section>
+      </section>
+    </section>
+    <div class="content-sections container">
+      <section class="content-section join-us-layout" id="join-us" aria-labelledby="join-us-title">
+        <div>
+          <h2 id="join-us-title">연구실 지원</h2>
+          <p><strong>한국항공대학교 양자 인공지능 연구실</strong>은 연구와 실제 문제 해결에 열정을 가진 학생들을 환영합니다. 연구실에 함께하고 싶다면 아래의 지원 안내와 장학금 기회를 살펴보세요.</p>
+          <details class="join-us-contact">
+            <summary>연구실에 지원하고 싶으신가요?</summary>
+            <div class="join-us-contact-info">
+              한국항공대학교 정재훈 교수에게 문의하기<br>
+              <a href="mailto:jhjung@kau.ac.kr">jhjung@kau.ac.kr</a>
+            </div>
+          </details>
+        </div>
+        <img src="../assets/images/join-us.png" width="1086" height="1448" loading="lazy" alt="종이가 찢어진 틈 사이로 손을 내미는 휴머노이드 로봇.">
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <p>© 2026 양자 인공지능 연구실(QAI Lab) · 한국항공대학교</p>
+  </footer>
+</body>
+</html>
