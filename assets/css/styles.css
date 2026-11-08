@@ -33,6 +33,29 @@ a:focus-visible { outline: 3px solid #308bc4; outline-offset: 5px; }
 .intro p { text-align: justify; font-size: 17px; }
 .intro .intro-lead { font-size: clamp(16px, 2vw, 20px); }
 .intro strong { color: #002870; }
+.home-publications {
+  padding: clamp(16px, 2vw, 24px);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.5);
+}
+.home-publications h2 { font-size: 22px; }
+.home-publications .publication-list { margin-bottom: 18px; }
+.home-publications .publication-list > li { line-height: 1.45; }
+.home-publications .publication-list > li + li { margin-top: 12px; padding-top: 12px; }
+.home-publications .publication-list a { color: var(--blue); font-weight: 700; text-underline-offset: 2px; }
+.home-publications .publication-list small { display: block; margin-top: 4px; }
+@media (min-width: 1100px) {
+  .home-overview {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(16rem, 24%);
+    column-gap: clamp(24px, 3vw, 44px);
+    max-width: 1320px;
+  }
+  .home-overview > .intro-lead,
+  .home-overview > .research-direction { grid-column: 1; }
+  .home-publications { grid-column: 2; grid-row: 1 / span 3; align-self: start; }
+}
 .research-direction {
   margin-top: 28px;
   padding: clamp(18px, 4vw, 36px);
@@ -73,6 +96,11 @@ p { margin: 0 0 18px; font-size: 18px; }
   margin-top: 18px;
   padding-top: 18px;
   border-top: 1px solid var(--line);
+}
+.publication-list > li[id]:target .publication-entry {
+  outline: 2px solid var(--blue);
+  outline-offset: 6px;
+  border-radius: 6px;
 }
 .publication-entry {
   display: grid;
