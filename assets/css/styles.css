@@ -32,7 +32,8 @@ a:focus-visible { outline: 3px solid #308bc4; outline-offset: 5px; }
 .home-news { max-width: 960px; margin-block: 20px 0; }
 .home-news-box { display: flex; align-items: baseline; flex-wrap: wrap; gap: 8px 16px; padding: clamp(18px, 4vw, 36px); border: 1px solid var(--line); border-radius: 12px; background: rgba(255, 255, 255, 0.5); }
 .home-news-label { flex-shrink: 0; color: var(--blue); font-size: 17px; }
-.home-news-message { flex: 1 1 240px; min-width: 0; margin: 0; color: #414e60; font-size: 17px; line-height: 1.8; word-break: keep-all; overflow-wrap: anywhere; }
+.home-news-items { flex: 1 1 240px; min-width: 0; display: grid; gap: 10px; margin: 0; padding: 0; list-style: none; }
+.home-news-message { min-width: 0; margin: 0; color: #414e60; font-size: 17px; line-height: 1.8; word-break: keep-all; overflow-wrap: anywhere; }
 .intro { max-width: 960px; padding-block: 28px 65px; color: #414e60; }
 .intro p { text-align: justify; font-size: 17px; }
 .intro .intro-lead { font-size: clamp(16px, 2vw, 20px); }
