@@ -28,7 +28,18 @@ a:focus-visible { outline: 3px solid #308bc4; outline-offset: 5px; }
 .nav-links .language-switch:hover { background: #dceafa; }
 :lang(ko) .intro p { word-break: keep-all; overflow-wrap: anywhere; }
 .hero { max-width: 960px; background: transparent; }
-.hero img { display: block; width: 100%; max-width: 1392px; height: auto; margin-inline: auto; }
+.hero img {
+  display: block;
+  width: 100%;
+  max-width: 1392px;
+  height: auto;
+  margin-inline: auto;
+  border-radius: 12px;
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 2%, #000 98%, transparent), linear-gradient(to bottom, transparent, #000 2%, #000 98%, transparent);
+  -webkit-mask-composite: source-in;
+  mask-image: linear-gradient(to right, transparent, #000 2%, #000 98%, transparent), linear-gradient(to bottom, transparent, #000 2%, #000 98%, transparent);
+  mask-composite: intersect;
+}
 .home-news { max-width: 960px; margin-block: 20px 0; }
 .home-news-box { width: 100%; padding: 12px 16px; border: 1px solid var(--line); border-radius: 12px; background: rgba(255, 255, 255, 0.5); }
 .home-news-label { display: block; margin-bottom: 6px; color: var(--blue); font-size: 17px; }
